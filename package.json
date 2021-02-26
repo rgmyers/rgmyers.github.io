@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rgmyers/rgmyers.github.io#readme",
   "dependencies": {
+    "git": "^0.1.5",
     "jslint": "^0.12.1",
     "node": "^15.8.0",
     "nodemon": "^2.0.7",
