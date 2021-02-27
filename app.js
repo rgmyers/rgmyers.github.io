@@ -23,12 +23,11 @@ window.addEventListener('load', ()=>{
                 console.log(data);
                 const temperature = (data.main.temp)-Kelvin;
                 const timezone = data.timezone;
-                const summary = data.weather[0].description;
-                temperatureDegree = temperature;
+                const summary = data.weather[0].description;        
                 console.log(temperature);
                 console.log(timezone);
                 console.log(summary);
-                temperatureDegree.innerHTML = temperature; 
+                temperatureDegree.innerHTML = Math.floor(temperature); 
                 temperatureDescription.textContent = summary;
                 console.log(`This is tempDescription ${temperatureDescription}`);      
             });
