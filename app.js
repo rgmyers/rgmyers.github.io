@@ -32,7 +32,7 @@ window.addEventListener('load', ()=>{
                 temperatureDegree.textContent = Math.floor(temperature); 
                 temperatureDescription.textContent = summary;
                 locationCity.textContent = data.name;
-                locationIcon.innerHTML =`<img src="icons/${icon}.png"/>`;
+                locationIcon.innerHTML=`<img src="icons/${icon}.png"/>`;
                 console.log(`This is tempDescription ${temperatureDescription}`);      
             });
             
