@@ -1,8 +1,2 @@
-
-const key = "3a8f879f9171d9be0e7e8e7867670af7";
-const town = "Charlottetown";
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=${key}&units=metric`
-
-let weatherTest = new weather(town);
-let tempElem = document.querySelector(".temp");
-tempElem.innerHTML += weather.temp;
+// Tutorial by http://youtube.com/CodeExplained
+// api key : 82005d27a116c2880c8f0fcb866998a0
