@@ -1,8 +1,11 @@
 require('dotenv').config();
+
 console.log(process.env);
-const key = proces.env.API_KEY;
+const key = process.env.API_KEY;
+
 //When the page loads run this function.
 window.addEventListener("load", () => {
+  
   let lon;
   let lat;
   let temperatureDegree = document.querySelector(".temperature-degree");
@@ -32,7 +35,7 @@ window.addEventListener("load", () => {
           console.log(`test results: ${test}`);
           console.log(temperature);
           console.log(summary);
-          temperatureDegree.textContent = Math.floor(temperature);
+          temperatureDegree.textContent = Math.floor(temperature).toString();
           temperatureDescription.textContent = summary;
           locationCity.textContent = data.name;
           locationIcon.innerHTML = `<img src="icons/${icon}.png"/>`;
